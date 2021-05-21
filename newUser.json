@@ -1,1 +1,14 @@
-{"email":" huyu","password":"fyuid"}{"email":" buigu","password":"fyuid"}{"email":" buigu","password":"fyuid"}
+[
+    {
+        "email": "12345678",
+        "password": "12345678"
+    },
+    {
+        "email": "fire",
+        "password": "21345678"
+    },
+    {
+        "email": "test2",
+        "password": "random21"
+    }
+]
