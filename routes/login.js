@@ -13,11 +13,10 @@ router.get('/', function(req, res, next) {
 router.post('/', function(req, res){
   var obj = fs.readFileSync('newUser.json',{encoding:'utf8', flag:'r'});
   var pData = JSON.parse(obj);
-  console.log(pData[2])
-  for(var i = 0; i < pData.lenght; i++){
+  console.log(pData.length);
+  for(var i = 0; i < pData.length; i++){
     if((req.body.email == pData[i].email) && (req.body.password == pData[i].password)){
-      console.log(key);
-      console.log(_.isEqual(req.body.email,key));
+      console.log('login successful');
       res.redirect('/');
     }
   }
